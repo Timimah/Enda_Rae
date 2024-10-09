@@ -8,8 +8,8 @@ export const About = () => {
         About
       </div>
       <div className="grid grid-cols-2 gap-20 px-20 my-10">
-      <div className="relative border-8 rounded-lg shadow-xl border-black">
-          <img className="object-cover -z-10 " src={jj} alt="Enda Rae" />
+      <div className="relative rounded-lg shadow-xl border-black">
+          <img className="object-cover -z-10 rounded-lg" src={jj} alt="Enda Rae" />
         </div>
         <div className="w-full text-2xl py-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam

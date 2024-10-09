@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export const Contact = () => {
   return (
-    <div className="contact">
-      <div className="flex justify-between px-20 mx-20 items-center my-16 h-36 bg-gray-900/40 shadow-xl rounded-lg backdrop-blur">
-        <div className="text-6xl text-center font-bold">Like my work?</div>
+    <div className="contact mb-16">
+      <div className="flex justify-between px-28 mx-20 items-center my-16 h-36 bg-gray-900/40 shadow-xl rounded-lg backdrop-blur">
+        <div className="text-5xl text-center font-light">Like my work?</div>
         <motion.div
           className="custom-button text-xl font-bold p-4 px-6"
           whileHover={{ scale: 1.03 }}

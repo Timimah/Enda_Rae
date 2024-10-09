@@ -9,8 +9,56 @@ import slide5 from "../assets/slide5.png";
 import slide6 from "../assets/slide6.png";
 import slide7 from "../assets/slide7.png";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { MdOpenInNew } from "react-icons/md";
 
-const images = [slide1, slide2, slide3, slide4, slide5, slide6, slide7];
+// const images = [slide1, slide2, slide3, slide4, slide5, slide6, slide7];
+
+const projects = [
+  {
+    image: slide1,
+    name: "Seeni",
+    github: "https://github.com/SeeniOfficial/frontend",
+    view: "https://seeni.netlify.app/",
+  },
+  {
+    image: slide2,
+    name: "School Portal",
+    github: "https://github.com/Timimah/School-portal-system",
+    view: "https://school-portal-erae.netlify.app/",
+  },
+  {
+    image: slide3,
+    name: "Salva",
+    github: "https://github.com/ResQ-by-Eureka/frontend",
+    view: "https://salva-eureka.netlify.app/",
+  },
+  {
+    image: slide4,
+    name: "Grocers",
+    github: "https://github.com/Timimah/grocery-app",
+    view: "https://erae-grocers.netlify.app/",
+  },
+  {
+    image: slide5,
+    name: "PDFExtrator",
+    github: "https://github.com/Timimah/PDFQuestionExtractor",
+    view: "https://erae-pdf-extractor.netlify.app/",
+  },
+  {
+    image: slide6,
+    name: "Enda Rae",
+    github: "https://github.com/Timimah/Enda_Rae",
+    view: "https://endarae-dev.netlify.app/",
+  },
+  {
+    image: slide7,
+    name: "Fuoye News",
+    github: "https://github.com/OyinDee/fuoyenews",
+    view: "https://fuoye-newss.netlify.app/",
+  },
+];
+
+const images = projects.map((project) => project.image);
 
 const variants = {
   enter: (direction) => {
@@ -123,7 +171,7 @@ export const ProjectsSlider = () => {
           <motion.img
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.04 }}
-            src={images[imageIndex]}
+            src={projects[imageIndex].image}
             className="relative w-full h-[38em] object-cover"
           />
           <AnimatePresence>
@@ -134,11 +182,25 @@ export const ProjectsSlider = () => {
                 exit="hidden"
                 variants={infoVariants}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="absolute bottom-0 w-full justify-around px-36 text-white shadow-xl bg-black/50 flex backdrop-blur-sm z-10 text-6xl h-36 items-center"
+                className="absolute bottom-0 w-full justify-center gap-4 px-60 text-white shadow-xl bg-black/50 flex flex-col backdrop-blur-sm z-10 text-4xl h-36 items-center"
               >
-                <div className="">Project Name .</div>
-                <div>Github .</div>
-                <div>View .</div>
+                <div className="font-bold">{projects[imageIndex].name}</div>
+                <div className="flex gap-4 items-center"><a
+                  href={projects[imageIndex].github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-2xl"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={projects[imageIndex].view}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-2xl flex gap-1 items-center"
+                >
+                  <span>View</span> <span><MdOpenInNew className="text-sm mt-2" /></span>
+                </a></div>
               </motion.div>
             )}
           </AnimatePresence>
