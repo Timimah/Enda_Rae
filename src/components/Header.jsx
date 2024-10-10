@@ -62,7 +62,7 @@ export const Header = () => {
           Contact
         </ScrollLink>
         <motion.div
-          className={`custom-button hover:font-bold p-2 px-4 ${
+          className={`custom-button border border-black hover:font-bold p-2 px-4 ${
             activeLink === "resume" ? "font-bold" : ""
           }`}
           whileHover={{ scale: 1.03 }}
