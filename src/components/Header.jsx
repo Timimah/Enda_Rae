@@ -30,8 +30,8 @@ export const Header = () => {
     <>
       <div className="fixed z-20 top-0 left-0 right-0 h-20 flex justify-between items-center px-5 md:px-20 bg-primary bg-opacity-5 backdrop-blur-sm">
         <ScrollLink to="hero" className="flex gap-2 logo font-extrabold text-3xl md:text-4xl h-10">
-          <img src={logo} width="40"className="md:hidden object-cover" alt="" />
-          <span className="hidden md:flex">Enda Rae</span>
+          {/* <img src={logo} width="40"className="md:hidden object-cover" alt="" /> */}
+          <span>Enda Rae</span>
         </ScrollLink>
         <motion.div 
           className="md:hidden rounded-full bg-black shadow-xl text-white p-2 cursor-pointer"
