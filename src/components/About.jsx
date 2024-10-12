@@ -12,7 +12,7 @@ export const About = () => {
         About
       </div>
       <div className="relative flex flex-col md:flex-row items-center gap-10 md:gap-20 px-10 md:px-20 md:my-10">
-        <div className="relative w-full md:w-2/3 h-[38em] rounded-2xl shadow-xl border-black">
+        <div className="relative w-full md:w-2/3 md:h-[38em] rounded-2xl shadow-xl border-black">
           <img
             className="object-cover h-full w-full -z-10 rounded-2xl"
             src={jj}

@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="min-h-screen relative">
       <div
-        className="fixed inset-0 -z-50"
+        className="fixed inset-0 -z-50 rotate-180 md:-rotate-180"
         style={{
           backgroundImage: `url(${vector})`,
           backgroundPosition: 'center',
