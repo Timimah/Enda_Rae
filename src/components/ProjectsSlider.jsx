@@ -270,7 +270,7 @@ export const ProjectsSlider = () => {
                   href={projects[imageIndex].github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-s             m"
+                  className="hover:underline text-md            m"
                 >
                   GitHub
                 </a>
@@ -278,7 +278,7 @@ export const ProjectsSlider = () => {
                   href={projects[imageIndex].view}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-sm flex gap-1 items-center"
+                  className="hover:underline text-md flex gap-1 items-center"
                 >
                   <span>View</span>{" "}
                   <span>
