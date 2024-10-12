@@ -41,8 +41,8 @@ export const Contact = () => {
       initial="hidden"
       animate={controls}
     >
-      <motion.div className="bg-black/60 flex justify-between items-center rounded-2xl shadow-2xl p-8 md:p-12">
-        <div className="w-2/3 flex flex-col">
+      <motion.div className="bg-black/60 flex flex-col md:flex-row justify-between md:items-center rounded-2xl shadow-2xl p-8 md:p-12">
+        <div className="md:w-2/3 flex flex-col">
           <motion.h2
             className="text-4xl md:text-5xl font-bold text-white mb-6"
             variants={itemVariants}

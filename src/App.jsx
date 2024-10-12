@@ -45,9 +45,18 @@ function App() {
   };
 
   return (
-    <div className="">
-      <img
-        className="fixed inset-0 rotate-180 object-cover -z-50"
+    <div className="min-h-screen relative">
+      <div
+        className="fixed inset-0 -z-50"
+        style={{
+          backgroundImage: `url(${vector})`,
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          // transform: 'rotate(180deg)',
+          height: '100vh',
+          width: '100vw',
+        }}
         src={vector}
         alt=""
       />

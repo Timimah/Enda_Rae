@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export const Hero = () => {
   return (
-    <div className='page flex flex-col sticky top-0 h-[40em] bottom-0 justify-center text-left mx-20'>
+    <div className='page flex flex-col sticky top-0 h-screen md:h-[40em] bottom-0 justify-center text-left mx-10 md:mx-20'>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,7 +16,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className='text-9xl'
+        className='text-8xl md:text-9xl'
       >
         Enda Rae.
       </motion.div>
@@ -24,7 +24,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className='font-extrabold text-7xl'
+        className='font-extrabold text-4xl md:text-7xl'
       >
         FRONTEND DEVELOPER.
       </motion.div>

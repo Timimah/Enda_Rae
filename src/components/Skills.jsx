@@ -8,13 +8,13 @@ import zustand from '../assets/zustand.svg'
 export const Skills = () => {
   return (
     <div className="w-full">
-      <div className="text-6xl text-center flex justify-center py-16 font-bold">
+      <div className="text-5xl md:text-6xl text-center flex justify-center py-16 font-bold">
         Skills
       </div>
-      <section className="grid grid-cols-2 gap-6 h-[30em] px-20 justify-center">
-        <div className="col-span-2 bg-black text-white p-20 h-fit rounded-lg">
+      <section className="grid grid-cols-2 gap-6 md:h-[30em] px-10 md:px-20 justify-center">
+        <div className="col-span-2 bg-black text-white p-8 py-10 md:p-20 h-fit rounded-2xl">
             {/* <div className="font-bold text-4xl">Technical Skills</div> */}
-          <ul className="text-3xl grid grid-cols-4 items-center gap-10 space-y-6">
+          <ul className="text-lg md:text-3xl grid grid-cols-4 items-center gap-10">
             <li className="flex flex-col items-center gap-4">
               <FaHtml5 />
               <div>HTML</div>

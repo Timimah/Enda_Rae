@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { IoMdArrowDropright } from "react-icons/io";
 
 export const Accordion = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="mb-4">
+    <div className="">
       <motion.button
         className="flex items-center w-fit font-semibold mb-1 text-left"
         onClick={() => setIsOpen(!isOpen)}

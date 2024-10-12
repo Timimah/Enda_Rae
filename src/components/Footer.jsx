@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div className="h-fit flex justify-between items-center mt-16 left-0 right-0 px-20 p-4 border border-t-primary">
-      <div className="flex gap-4">
+    <div className="h-fit flex justify-between items-end md:items-center mt-16 left-0 right-0 px-5 md:px-20 p-4 border border-t-primary">
+      <div className="flex text-xs md:text-lg gap-4">
         <motion.a
           href="https://www.twitter.com/Enda_rae"
           target="_blank"
@@ -38,9 +38,9 @@ export const Footer = () => {
           <IoIosMail />
         </motion.a>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col md:flex-row items-end  md:items-center gap-2 md:gap-4">
         <div className="text-xs">enda rae v.1 &nbsp; 2024. </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center text-sm gap-1">
           <GiLoveMystery />
           <div>
             Designed & Built by{" "}

@@ -9,7 +9,7 @@ export const Projects = ({id}) => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: 0.2 }}
 >
-    <div className='text-6xl text-center flex w-full justify-center pb-16 font-bold'>Projects</div>
+    <div className='text-5xl md:text-6xl text-center flex w-full justify-center pb-16 font-bold'>Projects</div>
         <div className=''>
         <ProjectsSlider />
         </div>

@@ -7,20 +7,20 @@ export const About = () => {
     <div className="">
       <div
         id="about"
-        className="text-6xl text-center flex justify-center py-16 font-bold"
+        className="text-5xl md:text-6xl text-center flex justify-center py-16 font-bold"
       >
         About
       </div>
-      <div className="relative flex items-center gap-20 px-20 my-10">
-        <div className="relative w-2/3 h-[38em] rounded-lg shadow-xl border-black">
+      <div className="relative flex flex-col md:flex-row items-center gap-10 md:gap-20 px-10 md:px-20 md:my-10">
+        <div className="relative w-full md:w-2/3 h-[38em] rounded-2xl shadow-xl border-black">
           <img
-            className="object-cover h-full w-full -z-10 rounded-lg"
+            className="object-cover h-full w-full -z-10 rounded-2xl"
             src={jj}
             alt="Enda Rae"
           />
         </div>
         <div className="w-full h-fit flex flex-col gap-4 text-xl text-justify">
-          <p className="font-bold text-3xl">
+          <p className="font-bold text-2xl md:text-3xl">
             I'm a passionate frontend developer dedicated to crafting seamless
             user experiences and driving digital transformation.
           </p>
@@ -30,7 +30,7 @@ export const About = () => {
             translating Figma designs into functional, engaging experiences.
           </p>
           <Accordion title="My expertise lies in:">
-            <ul className="list-disc ml-2 grid grid-cols-2 gap-x-6">
+            <ul className="list-disc ml-2 grid md:grid-cols-2 gap-x-6">
               <li>Responsive web design</li>
               <li>User experience (UX) optimization</li>
               <li>Figma to code implementation</li>
