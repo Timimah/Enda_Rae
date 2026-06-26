@@ -75,7 +75,7 @@ export const Header = () => {
             onClick={() => {
               clickLink("resume");
               window.open(
-                "https://drive.google.com/file/d/1w6hLoNBoCyXrwIEdkjGPhj45PgRaa-jo/view"
+                "https://drive.google.com/file/d/1PtlD8bWfUlaNEy-_OpEI0BIfHni1cD6n/view?usp=drive_link"
               );
             }}
           >
@@ -119,7 +119,7 @@ export const Header = () => {
               onClick={() => {
                 clickLink("resume");
                 window.open(
-                  "https://drive.google.com/file/d/1w6hLoNBoCyXrwIEdkjGPhj45PgRaa-jo/view"
+                  "https://drive.google.com/file/d/1PtlD8bWfUlaNEy-_OpEI0BIfHni1cD6n/view?usp=drive_link"
                 );
               }}
             >
